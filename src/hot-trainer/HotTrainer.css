@@ -2,5 +2,32 @@
     width: 300px;
     height: 300px;
     border: 1px solid red;
-    background-color: rgba(255, 0, 0, .05);
+    position: relative;
+}
+
+.hot {
+    box-shadow: inset 0 0 0 100vmax rgba(255, 0, 0, .09)
+}
+
+.hotter {
+    box-shadow: inset 0 0 0 100vmax rgba(255, 0, 0, 0.15)
+}
+
+
+.thehottest {
+    box-shadow: inset 0 0 0 100vmax rgba(255, 0, 0, 0.23)
+}
+
+.none {
+    box-shadow: unset;
+}
+
+.opacity {
+    position: absolute;
+    inset: 0;
+}
+
+.img {
+    width: auto;
+    height: 300px;
 }

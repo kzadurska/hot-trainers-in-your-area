@@ -1,5 +1,14 @@
 .bar {
     display: inline-block;
-    width: 50px;
+    width: 90px;
     height: 10px;
+    margin-right: 4px;
+}
+
+.scale {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 16px 0;
 }

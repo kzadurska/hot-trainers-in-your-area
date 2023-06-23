@@ -1,16 +1,19 @@
 import React from 'react';
 import './Thermometer.css';
 
-const COLORS = ['transparent', 'yellow', 'orange', 'red', 'red'];
+const COLORS = ['transparent', 'tomato', 'orangered', 'crimson', 'firebrick'];
 
 export const Thermometer: React.FC<{currentStep: number}> =({currentStep})=>{
 
-    const howManyBars = Object.keys(currentStep);
+    const howManyBars = [...Array(currentStep).keys()];
+    console.log(howManyBars)
 
     return (
-        <div>
+        <div className='scale'>
+            <span>🔥
+            </span>
             {howManyBars.map(bar => (
-                <span className="bar" style={{background: COLORS[currentStep]}}></span>
+                <span className="bar" key={bar} style={{background: COLORS[currentStep]}}></span>
             ))}
         </div>
     )

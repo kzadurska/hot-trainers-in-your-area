@@ -11,9 +11,8 @@ export interface NextStep {
 export const StepOne:React.FC<NextStep> = ({goNext, currentStep}) => {
 
     return <div className="app">
-        <HotTrainer/>
+        <HotTrainer  currentStep={currentStep}/>
         <Thermometer currentStep={currentStep} />
-<h2>1</h2>
         <button type="button" onClick={goNext}>Dawaj następnego!</button>
     </div>
 }

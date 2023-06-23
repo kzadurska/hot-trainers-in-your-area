@@ -1,4 +1,6 @@
 import React, { ChangeEvent, useState } from "react";
+import '../../App.css';
+
 
 export interface NextStep {
     goNext: ()=> void
@@ -10,13 +12,12 @@ export const StepZero:React.FC<NextStep> = ({goNext}) => {
 
     const onChange  = (event: ChangeEvent<HTMLInputElement>) => {
         setErrorMessage('')
-        setDateOfBirth("1999-01-06") // todo: use from event
+        setDateOfBirth(event.target.value)
     }
 
-    const isValid = ()=> true // dateOfBirth === "1999-01-06"
+    const isValid = ()=> dateOfBirth === "1999-01-06"
 
     const handleConfirm = () => {
-        console.log()
         if (isValid()) {
             goNext()
         } else {
@@ -25,9 +26,9 @@ export const StepZero:React.FC<NextStep> = ({goNext}) => {
         }
 
     }
-    return <div>
+    return (<div className="app">
         <input type="date" value={dateOfBirth} onChange={onChange} />
-        {errorMessage.length >0 && <div>{errorMessage}</div>}
-        <button type="button" onClick={handleConfirm}>Potwierdzam</button>
-    </div>
+        {errorMessage.length >0 && <div style={{margin: "16px 0", color: 'crimson'}}>{errorMessage}</div>}
+        <button type="button" onClick={handleConfirm} style={{marginTop: 16}}>Potwierdzam</button>
+    </div>)
 }

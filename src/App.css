@@ -3,4 +3,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 24px;
+  height: 100%;
 }
+
+.gradient {background: rgb(255,234,0);
+  background: linear-gradient(176deg, rgba(255,234,0,0.09429709383753504) 0%, rgba(255, 122, 20, 0.477) 35%, rgba(255,0,0,0.6797312675070029) 100%);}
