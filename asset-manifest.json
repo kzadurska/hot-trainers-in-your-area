@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hot-trainers-in-your-area/static/css/main.27186de1.css",
+    "main.js": "/hot-trainers-in-your-area/static/js/main.efc502f2.js",
+    "index.html": "/hot-trainers-in-your-area/index.html",
+    "main.27186de1.css.map": "/hot-trainers-in-your-area/static/css/main.27186de1.css.map",
+    "main.efc502f2.js.map": "/hot-trainers-in-your-area/static/js/main.efc502f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27186de1.css",
+    "static/js/main.efc502f2.js"
+  ]
+}
