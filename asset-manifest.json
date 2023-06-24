@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/hot-trainers-in-your-area/static/css/main.27186de1.css",
-    "main.js": "/hot-trainers-in-your-area/static/js/main.efc502f2.js",
+    "main.css": "/hot-trainers-in-your-area/static/css/main.6438f05c.css",
+    "main.js": "/hot-trainers-in-your-area/static/js/main.6508e137.js",
+    "static/media/trener.png": "/hot-trainers-in-your-area/static/media/trener.865bcccff6f57647213f.png",
     "index.html": "/hot-trainers-in-your-area/index.html",
-    "main.27186de1.css.map": "/hot-trainers-in-your-area/static/css/main.27186de1.css.map",
-    "main.efc502f2.js.map": "/hot-trainers-in-your-area/static/js/main.efc502f2.js.map"
+    "main.6438f05c.css.map": "/hot-trainers-in-your-area/static/css/main.6438f05c.css.map",
+    "main.6508e137.js.map": "/hot-trainers-in-your-area/static/js/main.6508e137.js.map"
   },
   "entrypoints": [
-    "static/css/main.27186de1.css",
-    "static/js/main.efc502f2.js"
+    "static/css/main.6438f05c.css",
+    "static/js/main.6508e137.js"
   ]
 }
