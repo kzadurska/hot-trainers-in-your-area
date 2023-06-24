@@ -1,4 +1,5 @@
 import React, { ChangeEvent, useState } from "react";
+
 import '../../App.css';
 
 
@@ -15,7 +16,7 @@ export const StepZero:React.FC<NextStep> = ({goNext}) => {
         setDateOfBirth(event.target.value)
     }
 
-    const isValid = ()=> dateOfBirth === "1999-01-06"
+    const isValid = () => dateOfBirth === "1999-01-06"
 
     const handleConfirm = () => {
         if (isValid()) {
@@ -27,6 +28,7 @@ export const StepZero:React.FC<NextStep> = ({goNext}) => {
 
     }
     return (<div className="app">
+        <h4 style={{textAlign: 'center'}}>Wprowadź datę urodzin, aby potwierdzić, że jesteś osobą pełnoletnią:</h4>
         <input type="date" value={dateOfBirth} onChange={onChange} />
         {errorMessage.length >0 && <div style={{margin: "16px 0", color: 'crimson'}}>{errorMessage}</div>}
         <button type="button" onClick={handleConfirm} style={{marginTop: 16}}>Potwierdzam</button>

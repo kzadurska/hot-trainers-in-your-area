@@ -6,7 +6,6 @@ const COLORS = ['transparent', 'tomato', 'orangered', 'crimson', 'firebrick'];
 export const Thermometer: React.FC<{currentStep: number}> =({currentStep})=>{
 
     const howManyBars = [...Array(currentStep).keys()];
-    console.log(howManyBars)
 
     return (
         <div className='scale'>
